@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>数组的map方法</title>
+  </head>
+  <body>
+    <script>
+      const arr = ['red', 'yellow', 'blue']
+      // map方法 可以遍历数组，并且处理数组数据，然后返回新的数组
+      const newArr = arr.map((item, index) => {
+        // console.log(item) //数组元素
+        // console.log(index) //数组下标
+        return '颜色:' + item
+      })
+      console.log(newArr) //['颜色:red', '颜色:yellow', '颜色:blue']
+
+      const arr1 = [1, 2, 3]
+      const newArr1 = arr1.map(item => item + 10)
+      console.log(newArr1) //[11, 12, 13]
+    </script>
+  </body>
+</html>
